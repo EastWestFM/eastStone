@@ -1,0 +1,10 @@
+name: eastStone
+version: 4.0
+main: pl.eastwestfm.eaststone.StonePlugin
+author: EastWestFM
+website: 'http://eastwestfm.pl'
+description: 'Plugin, ktory umozliwia stworzenie automatycznej stoniarki na serwerze'
+commands:
+  stonereload:
+    description: Przeladowanie pliku konfiguracyjnego
+    default: op

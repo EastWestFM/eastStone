@@ -1,0 +1,62 @@
+database:
+  
+  #Tryb bazy danych: yaml/sqlite/json
+  mode: 'sqlite'
+  
+  #Nazwa bazy danych (pliku)
+  name: 'generators'
+  
+  #Czas automatycznego zapisu generatorow (w minutach)
+  auto-save-time: 5
+  
+generator:
+
+  #Czas odnowienia sie stone (w sekundach)
+  regen-time: 2
+  
+  #Wytrzymalosc generatora
+  durability: 10
+  
+crafting:
+  
+  #Przedmiot, ktory otrzymamy w crafitngu
+  item: EMERALD_ORE
+  
+  #Nazwa przedmiotu
+  name: '&aGenerator stone'
+  
+  #Opis przedmiotu
+  lore:
+  - '&7Postaw na ziemi i stworz generator stone!'
+  
+  #Poszczegolne sloty w craftingu
+  # 1|2|3
+  # 4|5|6
+  # 7|8|9
+  slots:
+    slot-1: 1
+    slot-2: 1
+    slot-3: 1
+    slot-4: 1
+    slot-5: 33
+    slot-6: 1
+    slot-7: 1
+    slot-8: 1
+    slot-9: 1
+
+breaking:
+  
+  #Mozliwosc niszczenia generatorow przedmiotem: true/false
+  enabled: true
+  
+  #Przedmiot
+  item: GOLD_PICKAXE
+  
+  #Wyrzecenie generatora na ziemie po zniszczeniu: true/false
+  drop: true
+
+messages:
+  create: '&7Stworzyles generator stone!'
+  delete: '&cUsunales generator stone!'
+  cant-create: '&cW tym miejscu jest juz generator!'
+  end-generator: '&6Generator stone wyczerpal sie!'
